@@ -14,13 +14,17 @@
 
 <body>
  <div class="login">
-	<h1>Predict Salary Analysis</h1>
+	<h1>Your Kickstarter Project</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="experience" placeholder="Experience" required="required" />
-        <input type="text" name="test_score" placeholder="Test Score" required="required" />
-		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
+    	<input type="text" name="main_category" placeholder="main_category" required="required" />
+        <input type="text" name="category" placeholder="category" required="required" />
+		<input type="text" name="usd_goal_real" placeholder="usd_goal_real" required="required" />
+		<input type="text" name="duration_days" placeholder="duration_days" required="required" />
+		<input type="text" name="launch_month" placeholder="launch_month" required="required" />
+		<input type="text" name="launch_day" placeholder="launch_day" required="required" />
+		<input type="text" name="US" placeholder="US" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
